@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    
+}
+
+.logo{
+    width:10rem;
+    height: 50px;
+    margin-top: 1rem;
+}
+    
+    
+
+.navbar{
+    display: flex;
+    border: 3px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.button{
+    border-radius: 6px;
+    border: 3px solid red;
+    width: 60px;
+    height:40px;
+    margin:19px;
+    background-color: red;
+    color: white;
+    padding: 4px auto;
+    transition: 0.3s;
+}
+.button:hover{
+    transform: scale(1.04);
+}
+.language{
+    background-color: beige;
+    width: 6rem;
+    height: 43px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.language:hover{
+    transform: scale(1.04);
+}
+.img{
+    height: 28rem;
+}
+.title{
+    color: white;
+    margin: 80px auto;
+    text-align: center;
+    height: 10px;
+    font-size: 1rem;
+    /* background-image: url(bg.jpg); */
+    height: 100px;
+    /* border: 3px solid white; */
+
+
+}
+.email{
+    width: 26rem;
+    height:3rem;
+    background-color: black;
+    color:white;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 30px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.start{
+    background-color: red;
+    color: white;
+    width: 26rem;
+    height:49px;
+    font-size: 1rem;
+    margin-left:36.5vw;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.start:hover{
+    transform: scale(1.04);
+}
+span{
+    color:white;
+    
+}
+.help{
+    margin: 150px 0px 0px 170px;
+}
+.question{
+    margin-left: 25rem;
+}
+.answer{
+    display: none;
+    margin-left: 25rem;
+}
+
+.answer.active{
+    display: block;
+}
+
+.button{
+    text-decoration: none;
+    width:9rem;
+    height:15rem;
+}
