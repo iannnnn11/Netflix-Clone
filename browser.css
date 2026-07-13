@@ -179,21 +179,26 @@ main {
 
 .movie-row{
     display:flex;
-    flex-wrap: wrap;
     gap:20px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+    padding: 1rem 0;
 }
 
 .movie-card{
-    width:220px;
-    background:#181818;
-    border-radius:10px;
-    overflow:hidden;
-    color:white;
-    transition: 0.3s;
-    
+
+    min-width:220px;
+    flex-shrink:0;
+    cursor: pointer;
+
 }
+
 .movie-card:hover{
-    transform: scale(1.03);
+    transform:scale(1.05);
 }
 
 .movie-card img{
@@ -202,7 +207,18 @@ main {
     object-fit:cover;
 }
 
-.movie-card h3,
+.movie-card h2,
 .movie-card p{
     padding:10px;
 }
+.movie-section {
+    padding: 2rem 3rem 1rem 8rem;
+}
+
+
+
+.movie-row::-webkit-scrollbar {
+    display: none;
+}
+
+

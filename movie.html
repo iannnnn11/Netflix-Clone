@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details</title>
+
+    <link rel="stylesheet" href="movie.css">
+</head>
+
+<body>
+
+    <main class="movie-page">
+
+        <section class="movie-hero">
+
+            <div class="movie-overlay">
+
+                <div class="movie-details">
+
+                    <h1 id="movieTitle"></h1>
+
+                    <div class="movie-meta">
+                        <span id="movieRating"></span>
+                        <span id="movieYear"></span>
+                        <span id="movieRuntime"></span>
+                    </div>
+
+                    <p id="movieOverview"></p>
+
+                    <div class="movie-buttons">
+                        <button id="playTrailer">▶ Play Trailer</button>
+                        <button>＋ My List</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cast-section">
+
+            <h2>Cast</h2>
+
+            <div class="cast-row" id="castRow"></div>
+
+        </section>
+
+        <section class="trailer-section" id="trailerSection">
+
+            <button id="closeTrailer">✕</button>
+
+            <iframe
+                id="trailerFrame"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <script src="movie.js"></script>
+
+</body>
+</html>
