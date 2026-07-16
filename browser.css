@@ -21,15 +21,12 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 6rem;
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     gap: 2.5rem;
 
     background: linear-gradient(
@@ -40,24 +37,29 @@ main {
 
     border-right: 1px solid rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(3px);
-
     z-index: 100;
+    overflow: hidden;
+    transition: width 0.4s ease;
 }
 
-.sidebar-menu a {
-    color: #b3b3b3;
-    text-decoration: none;
-    font-size: 1rem;
+.sidebar-menu.open{
+    width:16rem;
+    align-items:flex-start;
+    padding-left:1.5rem;
+}
 
-    width: 3rem;
-    height: 3rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-    transition: 0.3s ease;
+.sidebar-menu a{
+    color:#b3b3b3;
+    text-decoration:none;
+    font-size:1rem;
+    width:100%;
+    height:3rem;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    padding-left:1rem;
+    border-radius:8px;
+    transition:.3s ease;
 }
 
 .sidebar-menu a:hover {
@@ -65,18 +67,28 @@ main {
     background-color: rgba(255, 255, 255, 0.12);
     transform: scale(1.1);
 }
-
+.sidebar-menu i{
+    min-width:30px;
+    text-align:center;
+    font-size:1.3rem;
+}
+.menu-text{
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+}
+.sidebar-menu.open .menu-text{
+    opacity:1;
+    visibility:visible;
+}
 .hero {
     position: relative;
-
     width: 100%;
     min-height: 100vh;
-
     background-image: url("strangr.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-
     overflow: hidden;
 }
 
@@ -109,12 +121,9 @@ main {
 .hero-content {
     width: 42%;
     max-width: 650px;
-
     margin-left: 9rem;
     padding-top: 5rem;
-
     color: white;
-
     position: relative;
     z-index: 2;
 }
@@ -189,36 +198,111 @@ main {
     padding: 1rem 0;
 }
 
+.movie-section{
+    padding:2rem 3rem 1rem 8rem;
+}
+
+.movie-row{
+    display:flex;
+    gap:1rem;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    padding:1rem 0 2rem;
+
+    scroll-behavior:smooth;
+}
+
+.movie-row::-webkit-scrollbar{
+    display:none;
+}
+
 .movie-card{
 
-    min-width:220px;
+    min-width:210px;
+    width:210px;
+
     flex-shrink:0;
-    cursor: pointer;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    background:#141414;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
 
 }
 
 .movie-card:hover{
-    transform:scale(1.05);
+
+    transform:
+        translateY(-12px)
+        scale(1.08);
+
+    box-shadow:
+        0 18px 40px
+        rgba(0,0,0,.8);
+
 }
 
 .movie-card img{
+
     width:100%;
-    height:300px;
+
+    height:320px;
+
     object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .35s ease;
+
 }
 
-.movie-card h2,
+.movie-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.movie-card h3{
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    padding:
+        .8rem
+        .8rem
+        .2rem;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
 .movie-card p{
-    padding:10px;
+
+    color:#c5c5c5;
+
+    font-size:.9rem;
+
+    padding:
+        0
+        .8rem
+        1rem;
+
 }
-.movie-section {
-    padding: 2rem 3rem 1rem 8rem;
-}
-
-
-
-.movie-row::-webkit-scrollbar {
-    display: none;
-}
-
 

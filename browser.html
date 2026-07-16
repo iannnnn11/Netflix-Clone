@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="browser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -12,19 +13,52 @@
     <main>
         <section class="hero">
             <aside class="sidebar">
-            <nav class="sidebar-menu">
 
-                <a href="">Search</a>
-                <a href="">Home</a>
-                <a href="">TV Shows</a>
-                <a href="">Movies</a>
-                <a href="">Games</a>
-                <a href="">My List</a>
-                <a href="">Profile</a>
+    <nav class="sidebar-menu">
 
-            </nav>
+        <a href="#" id="menuBtn">
+            <i class="fa-brands fa-neos"></i>
+            <span class="menu-text">Netflix</span>
+        </a>
 
-        </aside>
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="menu-text">Search</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-house"></i>
+            <span class="menu-text">Home</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-tv"></i>
+            <span class="menu-text">TV Shows</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-film"></i>
+            <span class="menu-text">Movies</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-gamepad"></i>
+            <span class="menu-text">Games</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-heart"></i>
+            <span class="menu-text">My List</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="menu-text">Profile</span>
+        </a>
+
+    </nav>
+
+</aside>
 
             <div class="overlay">
 
@@ -54,33 +88,125 @@
                 </div>
             </div>
         </section>
-<<<<<<< HEAD
-        <section class="movie-section">
-    <h2>Trending Now</h2>
+    <section class="movie-section">
+    <h2>🔥 Trending Now</h2>
     <div class="movie-row" id="trendingRow"></div>
 </section>
 
 <section class="movie-section">
-    <h2>Popular Movies</h2>
+    <h2>⭐ Top 10 Today</h2>
+    <div class="movie-row" id="top10Row"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎥 Popular Movies</h2>
     <div class="movie-row" id="popularRow"></div>
 </section>
 
 <section class="movie-section">
-    <h2>Top Rated</h2>
+    <h2>🏆 Top Rated</h2>
     <div class="movie-row" id="topRatedRow"></div>
 </section>
-=======
-        <section class="trending">
-            <h2>Trending Now</h2>
-            <div class="movie-row">
-                
-            </div>
-            <div>
-                <h2>welcome to the site!</h2>
-            </div>
-        </section>
-    
->>>>>>> f45c2e7adbce8e87fdb4d8ba111c4c86be5968c1
+
+<section class="movie-section">
+    <h2>💥 Action</h2>
+    <div class="movie-row" id="actionRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>😂 Comedy</h2>
+    <div class="movie-row" id="comedyRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>😱 Horror</h2>
+    <div class="movie-row" id="horrorRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>❤️ Romance</h2>
+    <div class="movie-row" id="romanceRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🚀 Science Fiction</h2>
+    <div class="movie-row" id="sciFiRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🕵️ Mystery</h2>
+    <div class="movie-row" id="mysteryRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>👻 Thriller</h2>
+    <div class="movie-row" id="thrillerRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🐉 Fantasy</h2>
+    <div class="movie-row" id="fantasyRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎭 Drama</h2>
+    <div class="movie-row" id="dramaRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>👨‍👩‍👧 Family</h2>
+    <div class="movie-row" id="familyRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎬 Adventure</h2>
+    <div class="movie-row" id="adventureRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🕶️ Crime</h2>
+    <div class="movie-row" id="crimeRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>📜 History</h2>
+    <div class="movie-row" id="historyRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎖️ War</h2>
+    <div class="movie-row" id="warRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎵 Music</h2>
+    <div class="movie-row" id="musicRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎞️ Animation</h2>
+    <div class="movie-row" id="animationRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>📺 Popular TV Shows</h2>
+    <div class="movie-row" id="tvPopularRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🔥 Trending TV Shows</h2>
+    <div class="movie-row" id="tvTrendingRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎬 Now Playing</h2>
+    <div class="movie-row" id="nowPlayingRow"></div>
+</section>
+
+<section class="movie-section">
+    <h2>🎥 Upcoming Movies</h2>
+    <div class="movie-row" id="upcomingRow"></div>
+</section>
     </main>
     <script src="browser.js"></script>
 

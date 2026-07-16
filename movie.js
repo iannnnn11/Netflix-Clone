@@ -1,4 +1,4 @@
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = "9f83a5cea3a23db23f555c347d1877ec";
 
 const movieTitle = document.querySelector("#movieTitle");
 const movieRating = document.querySelector("#movieRating");

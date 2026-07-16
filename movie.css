@@ -8,6 +8,7 @@ body {
     background-color: #000;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .movie-hero {
@@ -16,8 +17,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+    
 
+}
 .movie-overlay {
     min-height: 90vh;
 
@@ -44,6 +46,7 @@ body {
     max-width: 700px;
 
     margin-left: 7rem;
+    
 }
 
 .movie-details h1 {
