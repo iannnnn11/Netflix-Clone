@@ -68,7 +68,7 @@ function displayMovieDetails(movie) {
 
     if (movie.backdrop_path) {
         movieHero.style.backgroundImage =
-            `url("https://image.tmdb.org/t/p/original${movie.backdrop_path}")`;
+            `url("https://image.tmdb.org/t/p/w780${movie.backdrop_path}")`;
     }
 }
 
