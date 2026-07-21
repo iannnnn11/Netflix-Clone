@@ -27,5 +27,4 @@ A Netflix-inspired web application built using **HTML, CSS, and JavaScript**. Th
 - Genre Filtering
 - Angular Version
 
-
 ⭐ Feel free to fork, use, and improve this project!
